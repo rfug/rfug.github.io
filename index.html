@@ -1115,6 +1115,10 @@ div.figure, div.topic {
     @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
     body {
         font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+        font-size: 16px !important;
+    }
+    code {
+        font-size: 80% !important;
     }
 </style>
 </head>
@@ -1291,7 +1295,7 @@ several diverse interfaces.</li>
 framework. It has a highly modular architecture illustrated in the
 diagram below.</p>
 <div class="figure">
-<img alt="src/GettingStarted/architecture.png" src="./Robot Framework User Guide_files/architecture.png">
+<img class="img-responsive" alt="src/GettingStarted/architecture.png" src="./Robot Framework User Guide_files/architecture.png">
 <p class="caption">Robot Framework architecture</p>
 </img></div>
 <p>The <a class="reference internal" href="#creating-test-data">test data</a> is in simple, easy-to-edit tabular format. When
@@ -1306,11 +1310,11 @@ interfaces directly or use lower level test tools as drivers.</p>
 <p>Following screenshots show examples of the <a class="reference internal" href="#creating-test-data">test data</a> and created
 <a class="reference internal" href="#report-file">reports</a> and <a class="reference internal" href="#log-file">logs</a>.</p>
 <div class="figure">
-<img alt="src/GettingStarted/testdata_screenshots.png" src="./Robot Framework User Guide_files/testdata_screenshots.png">
+<img class="img-responsive" alt="src/GettingStarted/testdata_screenshots.png" src="./Robot Framework User Guide_files/testdata_screenshots.png">
 <p class="caption">Test case files</p>
 </img></div>
 <div class="figure">
-<img alt="src/GettingStarted/screenshots.png" src="./Robot Framework User Guide_files/screenshots.png">
+<img class="img-responsive" alt="src/GettingStarted/screenshots.png" src="./Robot Framework User Guide_files/screenshots.png">
 <p class="caption">Reports and logs</p>
 </img></div>
 </div>
@@ -2094,7 +2098,7 @@ in addition to changes to the actual test data.</p>
 example below). Robot Framework recognizes these <a class="reference internal" href="#test-data-tables">test data tables</a>
 based on the text in their first cell. Everything outside recognized
 tables is ignored.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Using the HTML format</caption>
 <colgroup>
 <col width="29%">
@@ -2122,7 +2126,7 @@ tables is ignored.</p>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="29%">
 <col width="38%">
@@ -2149,7 +2153,7 @@ tables is ignored.</p>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="21%">
 <col width="34%">
@@ -2191,7 +2195,7 @@ tables is ignored.</p>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="21%">
 <col width="39%">
@@ -2252,7 +2256,7 @@ table. <a class="reference internal" href="#test-data-tables">Test data tables</
 (<code>*</code>), followed by a normal table name and an optional closing
 asterisks.  Everything before the first recognized table is ignored
 similarly as data outside tables in HTML data.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Using the TSV format</caption>
 <colgroup>
 <col width="20%">
@@ -2688,7 +2692,7 @@ test data tables are identified by the first cell of the table. Recognized
 table names are <code>Settings</code>, <code>Variables</code>, <code>Test Cases</code>, and <code>Keywords</code>. Matching
 is case-insensitive and also singular variants like <code>Setting</code> and <code>Test Case</code>
 are accepted.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Different test data tables</caption>
 <colgroup>
 <col width="24%">
@@ -2776,7 +2780,7 @@ discussed in the sections below.</p>
 <h5>Escaping special characters</h5>
 <p>The backslash character can be used to escape special characters
 so that their literal values are used.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Escaping special characters</caption>
 <colgroup>
 <col width="10%">
@@ -2826,7 +2830,7 @@ so that their literal values are used.</p>
 <p>The backslash character also allows creating special escape sequences that are
 recognized as characters that would otherwise be hard or impossible to create
 in the test data.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Escape sequences</caption>
 <colgroup>
 <col width="17%">
@@ -2918,7 +2922,7 @@ as it is easier to understand. An exception to this recommendation is escaping
 the indented cells in <a class="reference internal" href="#for-loops">for loops</a> with a backslash when using the
 <a class="reference internal" href="#space-separated-format">space separated format</a>. All these cases are illustrated in the following
 examples first in HTML and then in the space separated plain text format:</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="22%">
 <col width="15%">
@@ -2986,7 +2990,7 @@ need to be escaped if they are needed as arguments to keywords or otherwise.
 Similarly as when preventing ignoring empty cells, it is possible to do that
 either using the backslash character or using <a class="reference internal" href="#built-in-variable">built-in variable</a>
 <code>${SPACE}</code>.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Escaping spaces examples</caption>
 <colgroup>
 <col width="33%">
@@ -3040,7 +3044,7 @@ with newlines</a>.</p>
 In the first three tables test data has not been split, and
 the following three illustrate how fewer columns are needed after
 splitting the data to several rows.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Test data that has not been split</caption>
 <colgroup>
 <col width="22%">
@@ -3072,7 +3076,7 @@ splitting the data to several rows.</p>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="19%">
 <col width="13%">
@@ -3103,7 +3107,7 @@ splitting the data to several rows.</p>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="14%">
 <col width="22%">
@@ -3174,7 +3178,7 @@ long...</td>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Test data split to several rows</caption>
 <colgroup>
 <col width="36%">
@@ -3202,7 +3206,7 @@ long...</td>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="32%">
 <col width="23%">
@@ -3229,7 +3233,7 @@ long...</td>
 </tr>
 </tbody>
 </table>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <colgroup>
 <col width="18%">
 <col width="26%">
@@ -4540,7 +4544,7 @@ as any other libraries, but there is no need to install them.</p>
 <h4><a class="toc-backref" href="#id508">Normal standard libraries</a></h4>
 <p>The available normal standard libraries are listed below with links to their
 documentations:</p>
-<blockquote>
+
 <ul class="simple">
 <li><a class="reference external" href="http://robotframework.org/robotframework/latest/libraries/BuiltIn.html">BuiltIn</a></li>
 <li><a class="reference external" href="http://robotframework.org/robotframework/latest/libraries/Collections.html">Collections</a></li>
@@ -5222,7 +5226,7 @@ automatically.</p>
 <h4><a class="toc-backref" href="#id525">Operating-system variables</a></h4>
 <p>Built-in variables related to the operating system ease making the test data
 operating-system-agnostic.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Available operating-system-related built-in variables</caption>
 <colgroup>
 <col width="15%">
@@ -5373,7 +5377,7 @@ variables can have different values during the test execution and some
 of them are not even available all the time. Altering the value of
 these variables does not affect the original values, but some values
 can be changed dynamically using keywords from the <a class="reference external" href="http://robotframework.org/robotframework/latest/libraries/BuiltIn.html">BuiltIn</a> library.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Available automatic variables</caption>
 <colgroup>
 <col width="26%">
@@ -5519,7 +5523,7 @@ are available in different scopes.</p>
 <div class="section" id="variable-priorities">
 <h4><a class="toc-backref" href="#id531">Variable priorities</a></h4>
 <p><em>Variables from the command line</em></p>
-<blockquote>
+
 <p>Variables <a class="reference internal" href="#setting-variables-in-command-line">set in the command line</a> have the highest priority of all
 variables that can be set before the actual test execution starts. They
 override possible variables created in Variable tables in test case
@@ -5534,7 +5538,7 @@ Notice, though, that if multiple variable files have same variables, the
 ones in the file specified first have the highest priority.</p>
 </blockquote>
 <p><em>Variable table in a test case file</em></p>
-<blockquote>
+
 <p>Variables created using the <a class="reference internal" href="#variable-table">Variable table</a> in a test case file
 are available for all the test cases in that file. These variables
 override possible variables with same names in imported resource and
@@ -5545,7 +5549,7 @@ in the Setting table, for example, for importing more variables from
 resource and variable files.</p>
 </blockquote>
 <p><em>Imported resource and variable files</em></p>
-<blockquote>
+
 <p>Variables imported from the <a class="reference internal" href="#resource-and-variable-files">resource and variable files</a> have the
 lowest priority of all variables created in the test data.
 Variables from resource files and variable files have the same
@@ -5561,7 +5565,7 @@ is due to the Variable table being processed before the Setting table
 where the resource files and variable files are imported.</p>
 </blockquote>
 <p><em>Variables set during test execution</em></p>
-<blockquote>
+
 Variables set during the test execution either using <a class="reference internal" href="#return-values-from-keywords">return values
 from keywords</a> or <a class="reference internal" href="#using-set-test-suite-global-variable-keywords">using Set Test/Suite/Global Variable keywords</a>
 always override possible existing
@@ -5569,7 +5573,7 @@ variables in the scope where they are set. In a sense they thus
 have the highest priority, but on the other hand they do not affect
 variables outside the scope they are defined.</blockquote>
 <p><em>Built-in variables</em></p>
-<blockquote>
+
 <a class="reference internal" href="#built-in-variables">Built-in variables</a> like <code>${TEMPDIR}</code> and <code>${TEST_NAME}</code>
 have the highest priority of all variables. They cannot be overridden
 using Variable table or from command line, but even they can be reset during
@@ -6877,7 +6881,7 @@ as Python or Java classes.</p>
 <h5>Implementation</h5>
 <p>Because variable files are always imported using a file system path, creating
 them as classes has some restrictions:</p>
-<blockquote>
+
 <ul class="simple">
 <li>Python classes must have the same name as the module they are located.</li>
 <li>Java classes must live in the default package.</li>
@@ -7090,7 +7094,7 @@ impossible to create dynamic test cases or user keywords that work differently
 depending on which libraries or resources are available. A solution to both of
 these problems is specifying the keyword priorities explicitly using the keyword
 <span class="name">Set Library Search Order</span> from the <a class="reference external" href="http://robotframework.org/robotframework/latest/libraries/BuiltIn.html">BuiltIn</a> library.</p>
-<blockquote>
+
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Although the keyword has the word <em>library</em> in its name, it works
@@ -7871,7 +7875,7 @@ discussed in more detail in the section <a class="reference internal" href="#dif
 system running them using return codes. When the execution starts
 successfully and no <a class="reference internal" href="#setting-criticality">critical test</a> fail, the return code is zero.
 All possible return codes are explained in the table below.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Possible return codes</caption>
 <colgroup>
 <col width="16%">
@@ -7932,7 +7936,7 @@ section in log files, and also written into Robot Framework's own
 <a class="reference internal" href="#system-log">system log</a>. Normally these errors and warnings are generated by Robot
 Framework itself, but libraries can also log <a class="reference internal" href="#errors-and-warnings">errors and warnings</a>.
 Example below illustrates how errors and warnings look like in the log file.</p>
-<table class="table table-condensed table-bordered">
+<table class="table table-condensed table-bordered table-responsive">
 <tbody><tr>
 <td class="time">20090322 19:58:42.528</td>
 <td class="error level">ERROR</td>
@@ -7966,7 +7970,7 @@ which takes an argument in the format <code>what:with</code>,
 where <code>what</code> is the name of the character to escape and
 <code>with</code> is the string to escape it with. Characters that can
 be escaped are listed in the table below:</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Available escapes</caption>
 <colgroup>
 <col width="20%">
@@ -9160,7 +9164,7 @@ are not executed at all. The dry run mode can be used to validate the
 test data; if the dry run passes, the data should be syntactically
 correct. This mode is triggered using option <span class="option">--dryrun</span>.</p>
 <p>The dry run execution may fail for following reasons:</p>
-<blockquote>
+
 <ul class="simple">
 <li>Using keywords that are not found.</li>
 <li>Using keywords with wrong number of arguments.</li>
@@ -9586,11 +9590,11 @@ files are created. Unless the special value <code>NONE</code> is used,
 log files are always created and their default name is
 <span class="file">log.html</span>.</p>
 <div class="figure">
-<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/log_passed.html"><img alt="src/ExecutingTestCases/log_passed.png" src="./Robot Framework User Guide_files/log_passed.png" style="width: 500px;"/></a>
+<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/log_passed.html"><img class="img-responsive" alt="src/ExecutingTestCases/log_passed.png" src="./Robot Framework User Guide_files/log_passed.png" style="width: 500px;"/></a>
 <p class="caption">An example of beginning of a log file</p>
 </div>
 <div class="figure">
-<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/log_failed.html"><img alt="src/ExecutingTestCases/log_failed.png" src="./Robot Framework User Guide_files/log_failed.png" style="width: 500px;"/></a>
+<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/log_failed.html"><img class="img-responsive" alt="src/ExecutingTestCases/log_failed.png" src="./Robot Framework User Guide_files/log_failed.png" style="width: 500px;"/></a>
 <p class="caption">An example of a log file with keyword details visible</p>
 </div>
 </div>
@@ -9609,11 +9613,11 @@ report files are created. Similarly as log files, reports are always
 created unless <code>NONE</code> is used as a value, and their default
 name is <span class="file">report.html</span>.</p>
 <div class="figure">
-<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/report_passed.html"><img alt="src/ExecutingTestCases/report_passed.png" src="./Robot Framework User Guide_files/report_passed.png" style="width: 500px;"/></a>
+<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/report_passed.html"><img class="img-responsive" alt="src/ExecutingTestCases/report_passed.png" src="./Robot Framework User Guide_files/report_passed.png" style="width: 500px;"/></a>
 <p class="caption">An example report file of successful test execution</p>
 </div>
 <div class="figure">
-<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/report_failed.html"><img alt="src/ExecutingTestCases/report_failed.png" src="./Robot Framework User Guide_files/report_failed.png" style="width: 500px;"/></a>
+<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/report_failed.html"><img class="img-responsive" alt="src/ExecutingTestCases/report_failed.png" src="./Robot Framework User Guide_files/report_failed.png" style="width: 500px;"/></a>
 <p class="caption">An example report file of failed test execution</p>
 </div>
 </div>
@@ -9762,7 +9766,7 @@ in the upper right corner. This allows users to remove messages below chosen
 level from the view. This can be useful especially when running test at
 <code>TRACE</code> level.</p>
 <div class="figure">
-<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/visible_log_level.html"><img alt="src/ExecutingTestCases/visible_log_level.png" src="./Robot Framework User Guide_files/visible_log_level.png" style="width: 500px;"/></a>
+<a class="reference external image-reference" href="http://robotframework.org/robotframework/latest/images/visible_log_level.html"><img class="img-responsive" alt="src/ExecutingTestCases/visible_log_level.png" src="./Robot Framework User Guide_files/visible_log_level.png" style="width: 500px;"/></a>
 <p class="caption">An example log showing the visible log level drop down</p>
 </div>
 <p>By default the drop down will be set at the lowest level in the log file, so
@@ -9842,7 +9846,7 @@ different patterns, and the figure below shows a snippet of the resulting
 --tagstatcombine smokeNOTowner-janne*
 </pre>
 <div class="figure">
-<img alt="src/ExecutingTestCases/tagstatcombine.png" src="./Robot Framework User Guide_files/tagstatcombine.png" style="width: 550px;">
+<img class="img-responsive" alt="src/ExecutingTestCases/tagstatcombine.png" src="./Robot Framework User Guide_files/tagstatcombine.png" style="width: 550px;">
 <p class="caption">Examples of combined tag statistics</p>
 </img></div>
 <p>As the above example illustrates, the name of the added combined statistic
@@ -9873,7 +9877,7 @@ Tag</span> table when example test data is executed with these options:</p>
 --tagstatlink owner-*:mailto:%1@domain.com?subject=Acceptance_Tests:Send_Mail
 </pre>
 <div class="figure">
-<img alt="src/ExecutingTestCases/tagstatlink.png" src="./Robot Framework User Guide_files/tagstatlink.png" style="width: 550px;">
+<img class="img-responsive" alt="src/ExecutingTestCases/tagstatlink.png" src="./Robot Framework User Guide_files/tagstatlink.png" style="width: 550px;">
 <p class="caption">Examples of links from tag names</p>
 </img></div>
 </div>
@@ -10060,7 +10064,7 @@ it is possible to use <span class="option">--prerunmodifier</span> and
 <h3><a class="toc-backref" href="#id703">3.5.8   System log</a></h3>
 <p>Robot Framework has its own plain-text system log where it writes
 information about</p>
-<blockquote>
+
 <ul class="simple">
 <li>Processed and skipped test data files</li>
 <li>Imported test libraries, resource files and variable files</li>
@@ -10220,7 +10224,7 @@ on your machine.</p>
 <h4><a class="toc-backref" href="#id710">Different test library APIs</a></h4>
 <p>Robot Framework has three different test library APIs.</p>
 <p>Static API</p>
-<blockquote>
+
 The simplest approach is having a module (in Python) or a class
 (in Python or Java) with methods which map directly to
 <a class="reference internal" href="#keyword-names">keyword names</a>. Keywords also take the same <a class="reference internal" href="#keyword-arguments">arguments</a> as
@@ -10228,7 +10232,7 @@ the methods implementing them.  Keywords <a class="reference internal" href="#re
 exceptions, <a class="reference internal" href="#logging-information">log</a> by writing to standard output and can <a class="reference internal" href="#returning-values">return
 values</a> using the <code>return</code> statement.</blockquote>
 <p>Dynamic API</p>
-<blockquote>
+
 Dynamic libraries are classes that implement a method to get the names
 of the keywords they implement, and another method to execute a named
 keyword with given arguments. The names of the keywords to implement, as
@@ -10236,7 +10240,7 @@ well as how they are executed, can be determined dynamically at
 runtime, but reporting the status, logging and returning values is done
 similarly as in the static API.</blockquote>
 <p>Hybrid API</p>
-<blockquote>
+
 This is a hybrid between the static and the dynamic API. Libraries are
 classes with a method telling what keywords they implement, but
 those keywords must be available directly. Everything else except
@@ -11263,7 +11267,7 @@ as pseudocode meaning <code>System.out.println("message");</code>.</p>
 <span class="k">print</span> <span class="s1">'*HTML* This is &lt;b&gt;bold&lt;/b&gt;.'</span>
 <span class="k">print</span> <span class="s1">'*HTML* &lt;a href="http://robotframework.org"&gt;Robot Framework&lt;/a&gt;'</span>
 </pre></div>
-<table class="table table-condensed table-bordered">
+<table class="table table-condensed table-bordered table-responsive">
 <tbody><tr>
 <td class="time">16:18:42.123</td>
 <td class="info level">INFO</td>
@@ -11617,7 +11621,7 @@ keyword is executed, there will be a warning like shown below in the log file.</
 <span class="sd">    """</span>
     <span class="k">return</span> <span class="n">do_something</span><span class="p">(</span><span class="n">argument</span><span class="p">)</span>
 </pre></div>
-<table class="table table-condensed table-bordered">
+<table class="table table-condensed table-bordered table-responsive">
 <tbody><tr>
 <td class="time">20080911 16:00:22.650</td>
 <td class="warn level">WARN</td>
@@ -11770,7 +11774,7 @@ arguments and free keyword arguments. The syntax for how to represent
 all these different variables is explained in the following table.
 Note that the examples use Python syntax for lists, but Java developers
 should use Java lists or String arrays instead.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Representing different arguments with <code>get_keyword_arguments</code></caption>
 <colgroup>
 <col width="23%">
@@ -12004,7 +12008,7 @@ The comment shows the arguments that the keyword is actually called with.</p>
 <p>All special methods in the dynamic API are listed in the table
 below. Method names are listed in the underscore format, but their
 camelCase aliases work exactly the same way.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>All special methods in the dynamic API</caption>
 <colgroup>
 <col width="21%">
@@ -12351,7 +12355,7 @@ servers communicate using a simple <a class="reference internal" href="#remote-p
 XML-RPC channel.  The high level architecture of all this is
 illustrated in the picture below:</p>
 <div class="figure">
-<img alt="src/ExtendingRobotFramework/remote.png" src="./Robot Framework User Guide_files/remote.png">
+<img class="img-responsive" alt="src/ExtendingRobotFramework/remote.png" src="./Robot Framework User Guide_files/remote.png">
 <p class="caption">Robot Framework architecture with Remote library</p>
 </img></div>
 <div class="admonition note">
@@ -12541,7 +12545,7 @@ types</a>.</p>
 (or map, depending on terminology) containing items explained in the
 following table. Notice that only the <code>status</code> entry is mandatory,
 others can be omitted if they are not applicable.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Entries in the remote result dictionary</caption>
 <colgroup>
 <col width="16%">
@@ -12727,7 +12731,7 @@ All methods related to test execution progress have the same signature
 details of the event. Listener methods are free to do whatever they want
 to do with the information they receive, but they cannot directly change
 it. If that is needed, <a class="reference internal" href="#listener-version-3">listener version 3</a> can be used instead.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Methods in the listener API 2</caption>
 <colgroup>
 <col width="18%">
@@ -13024,7 +13028,7 @@ initially it does not have all methods that the version 2 has. The
 main reason is that <a class="reference external" href="#issuecomment-164910769">suitable model objects are not available internally</a>.
 The <code>close</code> method and methods related to output files are called exactly
 same way in both versions.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Methods in the listener API 3</caption>
 <colgroup>
 <col width="18%">
@@ -13147,7 +13151,7 @@ of scope.</p>
 <p>Robot Framework offers a <a class="reference internal" href="#programmatic-logging-apis">programmatic logging APIs</a> that listeners can
 utilize. There are some limitations, however, and how different listener
 methods can log messages is explained in the table below.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>How listener methods can log</caption>
 <colgroup>
 <col width="30%">
@@ -13529,19 +13533,19 @@ python -m robot.libdoc [options] library_or_resource list|show|version [names]
 </div>
 <div class="section" id="options">
 <h4>Options</h4>
-<blockquote>
-<table class="table table-condensed table-bordered" frame="void" rules="none">
+
+<table class="table table-condensed table-responsive" frame="void" rules="none">
 <colgroup><col class="option">
 <col class="description">
 </col></col></colgroup><tbody valign="top">
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-f</span>, <span class="option">--format <var>&lt;html|xml&gt;</var></span></kbd></td>
+<code><span class="option">-f</span>, <span class="option">--format <var>&lt;html|xml&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Specifies whether to generate HTML or XML output.
 If this options is not used, the format is got
 from the extension of the output file.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-F</span>, <span class="option">--docformat <var>&lt;robot|html|text|rest&gt;</var></span></kbd></td>
+<code><span class="option">-F</span>, <span class="option">--docformat <var>&lt;robot|html|text|rest&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Specifies the source documentation format. Possible
 values are Robot Framework's documentation format,
@@ -13550,22 +13554,22 @@ can be specified in test library source code and
 the initial default value is <code>robot</code>.
 New in Robot Framework 2.7.5.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-N</span>, <span class="option">--name <var>&lt;newname&gt;</var></span></kbd></td>
+<code><span class="option">-N</span>, <span class="option">--name <var>&lt;newname&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the name of the documented library or resource.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-V</span>, <span class="option">--version <var>&lt;newversion&gt;</var></span></kbd></td>
+<code><span class="option">-V</span>, <span class="option">--version <var>&lt;newversion&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the version of the documented library or
 resource. The default value for test libraries is
 <a class="reference internal" href="#specifying-library-version">got from the source code</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-P</span>, <span class="option">--pythonpath <var>&lt;path&gt;</var></span></kbd></td>
+<code><span class="option">-P</span>, <span class="option">--pythonpath <var>&lt;path&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Additional locations where to search for libraries
 and resources similarly as when <a class="reference internal" href="#using-pythonpath-option">running tests</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-E</span>, <span class="option">--escape <var>&lt;what:with&gt;</var></span></kbd></td>
+<code><span class="option">-E</span>, <span class="option">--escape <var>&lt;what:with&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Escapes characters which are problematic in console.
 <code>what</code> is the name of the character to escape
@@ -13573,7 +13577,7 @@ and <code>with</code> is the string to escape it with.
 Available escapes are listed in the <span class="option">--help</span>
 output.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<code><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
 <td>Prints this help.</td></tr>
 </tbody>
 </table>
@@ -13982,7 +13986,7 @@ separate <a class="reference internal" href="#importing-section">importing secti
 <p>All these sections act as targets that can be linked, and the possible
 target names are listed in the table below. Using these targets is
 shown in the example of the next section.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Automatic section link targets</caption>
 <colgroup>
 <col width="20%">
@@ -14055,7 +14059,7 @@ the same regardless where keywords originated from.</p>
 <p>Regardless how keywords are actually implemented, Libdoc shows arguments
 similarly as when creating keywords in Python. This formatting is explained
 more thoroughly in the table below.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>How Libdoc represents arguments</caption>
 <colgroup>
 <col width="28%">
@@ -14235,57 +14239,57 @@ arguments.</p>
 </div>
 <div class="section" id="id330">
 <h4>Options</h4>
-<blockquote>
-<table class="table table-condensed table-bordered" frame="void" rules="none">
+
+<table class="table table-condensed table-responsive" frame="void" rules="none">
 <colgroup><col class="option">
 <col class="description">
 </col></col></colgroup><tbody valign="top">
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-T</span>, <span class="option">--title <var>&lt;title&gt;</var></span></kbd></td>
+<code><span class="option">-T</span>, <span class="option">--title <var>&lt;title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Set the title of the generated documentation.
 Underscores in the title are converted to spaces.
 The default title is the name of the top level suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-N</span>, <span class="option">--name <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-N</span>, <span class="option">--name <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Override the name of the top level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-D</span>, <span class="option">--doc <var>&lt;doc&gt;</var></span></kbd></td>
+<code><span class="option">-D</span>, <span class="option">--doc <var>&lt;doc&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Override the documentation of the top level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-M</span>, <span class="option">--metadata <var>&lt;name:value&gt;</var></span></kbd></td>
+<code><span class="option">-M</span>, <span class="option">--metadata <var>&lt;name:value&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Set/override free metadata of the top level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-G</span>, <span class="option">--settag <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-G</span>, <span class="option">--settag <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Set given tag(s) to all test cases.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-t</span>, <span class="option">--test <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-t</span>, <span class="option">--test <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Include tests by name.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-s</span>, <span class="option">--suite <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-s</span>, <span class="option">--suite <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Include suites by name.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-i</span>, <span class="option">--include <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-i</span>, <span class="option">--include <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Include tests by tags.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-e</span>, <span class="option">--exclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-e</span>, <span class="option">--exclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Exclude tests by tags.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-A</span>, <span class="option">--argumentfile <var>&lt;path&gt;</var></span></kbd></td>
+<code><span class="option">-A</span>, <span class="option">--argumentfile <var>&lt;path&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Text file to read more arguments from. Works
 exactly like <a class="reference internal" href="#argument-files">argument files</a> when running
 tests. New in Robot Framework 3.0.2.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<code><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
 <td>Print this help in the console.</td></tr>
 </tbody>
 </table>
@@ -14336,13 +14340,13 @@ python -m robot.tidy --recursive [options] directory
 </div>
 <div class="section" id="id336">
 <h4>Options</h4>
-<blockquote>
-<table class="table table-condensed table-bordered" frame="void" rules="none">
+
+<table class="table table-condensed table-responsive" frame="void" rules="none">
 <colgroup><col class="option">
 <col class="description">
 </col></col></colgroup><tbody valign="top">
 <tr><td class="option-group">
-<kbd><span class="option">-i</span>, <span class="option">--inplace</span></kbd></td>
+<code><span class="option">-i</span>, <span class="option">--inplace</span></kbd></td>
 <td><p class="first">Tidy given file(s) so that original file(s) are overwritten
 (or removed, if the format is changed). When this option is
 used, it is possible to give multiple input files. Examples:</p>
@@ -14351,28 +14355,28 @@ python -m robot.tidy --inplace --format txt *.html
 </pre>
 </td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-r</span>, <span class="option">--recursive</span></kbd></td>
+<code><span class="option">-r</span>, <span class="option">--recursive</span></kbd></td>
 </tr>
 <tr><td> </td><td>Process given directory recursively. Files in the directory
 are processed in place similarly as when <span class="option">--inplace</span>
 option is used.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-f</span>, <span class="option">--format <var>&lt;robot|txt|html|tsv&gt;</var></span></kbd></td>
+<code><span class="option">-f</span>, <span class="option">--format <var>&lt;robot|txt|html|tsv&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Output file format. If the output file is given explicitly,
 the default value is got from its extension. Otherwise
 the format is not changed.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-p</span>, <span class="option">--use-pipes</span></kbd></td>
+<code><span class="option">-p</span>, <span class="option">--use-pipes</span></kbd></td>
 </tr>
 <tr><td> </td><td>Use a pipe character (|) as a cell separator in the txt format.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-s</span>, <span class="option">--spacecount <var>&lt;number&gt;</var></span></kbd></td>
+<code><span class="option">-s</span>, <span class="option">--spacecount <var>&lt;number&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>The number of spaces between cells in the txt format.
 New in Robot Framework 2.7.3.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-l</span>, <span class="option">--lineseparator <var>&lt;native|windows|unix&gt;</var></span></kbd></td>
+<code><span class="option">-l</span>, <span class="option">--lineseparator <var>&lt;native|windows|unix&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><p class="first">Line separator to use in outputs. The default is 'native'.</p>
 <ul class="simple">
@@ -14383,7 +14387,7 @@ New in Robot Framework 2.7.3.</td></tr>
 <p class="last">New in Robot Framework 2.7.6.</p>
 </td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<code><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
 <td>Show this help.</td></tr>
 </tbody>
 </table>
@@ -14478,7 +14482,7 @@ variable files and to define metadata for test suites and test
 cases. It can be included in test case files and resource files. Note
 that in a resource file, a Setting table can only include settings for
 importing libraries, resources, and variables.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Settings available in the Setting table</caption>
 <colgroup>
 <col width="23%">
@@ -14547,7 +14551,7 @@ especially when using the plain text format.</p>
 <p>The settings in the Test Case table are always specific to the test
 case for which they are defined. Some of these settings override the
 default values defined in the Settings table.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Settings available in the Test Case table</caption>
 <colgroup>
 <col width="23%">
@@ -14584,7 +14588,7 @@ default values defined in the Settings table.</p>
 <h3><a class="toc-backref" href="#id813">6.1.3   Keyword table</a></h3>
 <p>Settings in the Keyword table are specific to the user keyword for
 which they are defined.</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Settings available in the Keyword table</caption>
 <colgroup>
 <col width="23%">
@@ -14633,248 +14637,248 @@ are listed.</p>
 </div>
 <div class="section" id="command-line-options-for-test-execution">
 <h3><a class="toc-backref" href="#id814">6.2.1   Command line options for test execution</a></h3>
-<blockquote>
-<table class="table table-condensed table-bordered" frame="void" rules="none">
+
+<table class="table table-condensed table-responsive" frame="void" rules="none">
 <colgroup><col class="option">
 <col class="description">
 </col></col></colgroup><tbody valign="top">
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-F</span>, <span class="option">--extension <var>&lt;value&gt;</var></span></kbd></td>
+<code><span class="option">-F</span>, <span class="option">--extension <var>&lt;value&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#selecting-files-to-parse">Parse only these files</a> when executing a directory.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-N</span>, <span class="option">--name <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-N</span>, <span class="option">--name <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-the-name">Sets the name</a> of the top-level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-D</span>, <span class="option">--doc <var>&lt;document&gt;</var></span></kbd></td>
+<code><span class="option">-D</span>, <span class="option">--doc <var>&lt;document&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-the-documentation">Sets the documentation</a> of the top-level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-M</span>, <span class="option">--metadata <var>&lt;name:value&gt;</var></span></kbd></td>
+<code><span class="option">-M</span>, <span class="option">--metadata <var>&lt;name:value&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-free-metadata">Sets free metadata</a> for the top level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-G</span>, <span class="option">--settag <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-G</span>, <span class="option">--settag <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-tags">Sets the tag(s)</a> to all executed test cases.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-t</span>, <span class="option">--test <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-t</span>, <span class="option">--test <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-test-suite-and-test-case-names">Selects the test cases by name</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-s</span>, <span class="option">--suite <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-s</span>, <span class="option">--suite <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-test-suite-and-test-case-names">Selects the test suites</a> by name.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-R</span>, <span class="option">--rerunfailed <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-R</span>, <span class="option">--rerunfailed <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#re-executing-failed-test-cases">Selects failed tests</a> from an earlier <a class="reference internal" href="#output-file">output file</a>
 to be re-executed.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-S</span>, <span class="option">--rerunfailedsuites <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-S</span>, <span class="option">--rerunfailedsuites <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#re-executing-failed-test-suites">Selects failed test suites</a> from an earlier
 <a class="reference internal" href="#output-file">output file</a> to be re-executed.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-i</span>, <span class="option">--include <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-i</span>, <span class="option">--include <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-tag-names">Selects the test cases</a> by tag.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-e</span>, <span class="option">--exclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-e</span>, <span class="option">--exclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-tag-names">Selects the test cases</a> by tag.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-c</span>, <span class="option">--critical <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-c</span>, <span class="option">--critical <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Tests that have the given tag are <a class="reference internal" href="#setting-criticality">considered critical</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-n</span>, <span class="option">--noncritical <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-n</span>, <span class="option">--noncritical <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Tests that have the given tag are <a class="reference internal" href="#setting-criticality">not critical</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-v</span>, <span class="option">--variable <var>&lt;name:value&gt;</var></span></kbd></td>
+<code><span class="option">-v</span>, <span class="option">--variable <var>&lt;name:value&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets <a class="reference internal" href="#setting-variables-in-command-line">individual variables</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-V</span>, <span class="option">--variablefile <var>&lt;path:args&gt;</var></span></kbd></td>
+<code><span class="option">-V</span>, <span class="option">--variablefile <var>&lt;path:args&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets variables using <a class="reference internal" href="#variable-files">variable files</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-d</span>, <span class="option">--outputdir <var>&lt;dir&gt;</var></span></kbd></td>
+<code><span class="option">-d</span>, <span class="option">--outputdir <var>&lt;dir&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Defines where to <a class="reference internal" href="#output-directory">create output files</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-o</span>, <span class="option">--output <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-o</span>, <span class="option">--output <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#output-file">output file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-l</span>, <span class="option">--log <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-l</span>, <span class="option">--log <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#log-file">log file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-r</span>, <span class="option">--report <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-r</span>, <span class="option">--report <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#report-file">report file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-x</span>, <span class="option">--xunit <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-x</span>, <span class="option">--xunit <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#xunit-compatible-result-file">xUnit compatible result file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--xunitskipnoncritical</span></kbd></td>
+<code><span class="option">--xunitskipnoncritical</span></kbd></td>
 </tr>
 <tr><td> </td><td>Mark non-critical tests on <a class="reference internal" href="#xunit-compatible-result-file">xUnit compatible result file</a> as skipped.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-b</span>, <span class="option">--debugfile <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-b</span>, <span class="option">--debugfile <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>A <a class="reference internal" href="#debug-file">debug file</a> that is written during execution.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-T</span>, <span class="option">--timestampoutputs</span></kbd></td>
+<code><span class="option">-T</span>, <span class="option">--timestampoutputs</span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#timestamping-output-files">Adds a timestamp</a> to all output files.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--splitlog</span></kbd></td>
+<code><span class="option">--splitlog</span></kbd></td>
 <td><a class="reference internal" href="#splitting-logs">Split log file</a> into smaller pieces that open in
 browser transparently.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--logtitle <var>&lt;title&gt;</var></span></kbd></td>
+<code><span class="option">--logtitle <var>&lt;title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-titles">Sets a title</a> for the generated test log.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--reporttitle <var>&lt;title&gt;</var></span></kbd></td>
+<code><span class="option">--reporttitle <var>&lt;title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-titles">Sets a title</a> for the generated test report.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--reportbackground <var>&lt;colors&gt;</var></span></kbd></td>
+<code><span class="option">--reportbackground <var>&lt;colors&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-background-colors">Sets background colors</a> of the generated report.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-L</span>, <span class="option">--loglevel <var>&lt;level&gt;</var></span></kbd></td>
+<code><span class="option">-L</span>, <span class="option">--loglevel <var>&lt;level&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-log-level">Sets the threshold level</a> for logging. Optionally
 the default <a class="reference internal" href="#visible-log-level">visible log level</a> can be given
 separated with a colon (:).</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--suitestatlevel <var>&lt;level&gt;</var></span></kbd></td>
+<code><span class="option">--suitestatlevel <var>&lt;level&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Defines how many <a class="reference internal" href="#configuring-displayed-suite-statistics">levels to show</a> in the
 <em>Statistics by Suite</em> table in outputs.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatinclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatinclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#including-and-excluding-tag-statistics">Includes only these tags</a> in the <em>Statistics by Tag</em> table.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatexclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatexclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#including-and-excluding-tag-statistics">Excludes these tags</a> from the <em>Statistics by Tag</em> table.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatcombine <var>&lt;tags:title&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatcombine <var>&lt;tags:title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Creates <a class="reference internal" href="#generating-combined-tag-statistics">combined statistics based on tags</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagdoc <var>&lt;pattern:doc&gt;</var></span></kbd></td>
+<code><span class="option">--tagdoc <var>&lt;pattern:doc&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Adds <a class="reference internal" href="#adding-documentation-to-tags">documentation to the specified tags</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatlink <var>&lt;pattern:link:title&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatlink <var>&lt;pattern:link:title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Adds <a class="reference internal" href="#creating-links-from-tag-names">external links</a> to the <em>Statistics by Tag</em> table.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--removekeywords <var>&lt;all|passed|name:pattern|tag:pattern|for|wuks&gt;</var></span></kbd></td>
+<code><span class="option">--removekeywords <var>&lt;all|passed|name:pattern|tag:pattern|for|wuks&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#removing-and-flattening-keywords">Removes keyword data</a>
 from the generated log file.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--flattenkeywords <var>&lt;for|foritem|name:pattern|tag:pattern&gt;</var></span></kbd></td>
+<code><span class="option">--flattenkeywords <var>&lt;for|foritem|name:pattern|tag:pattern&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#removing-and-flattening-keywords">Flattens keywords</a>
 in the generated log file.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--listener <var>&lt;name:args&gt;</var></span></kbd></td>
+<code><span class="option">--listener <var>&lt;name:args&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-listeners">Sets a listener</a> for monitoring test execution.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--warnonskippedfiles</span></kbd></td>
+<code><span class="option">--warnonskippedfiles</span></kbd></td>
 </tr>
 <tr><td> </td><td>Show a warning when <a class="reference internal" href="#warning-on-invalid-files">an invalid file is skipped</a>.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--nostatusrc</span></kbd></td>
+<code><span class="option">--nostatusrc</span></kbd></td>
 <td>Sets the <a class="reference internal" href="#return-codes">return code</a> to zero regardless of failures
 in test cases. Error codes are returned normally.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--runemptysuite</span></kbd></td>
+<code><span class="option">--runemptysuite</span></kbd></td>
 </tr>
 <tr><td> </td><td>Executes tests also if the selected <a class="reference internal" href="#when-no-tests-match-selection">test suites are empty</a>.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--dryrun</span></kbd></td>
+<code><span class="option">--dryrun</span></kbd></td>
 <td>In the <a class="reference internal" href="#dry-run">dry run</a> mode tests are run without executing
 keywords originating from test libraries. Useful for
 validating test data syntax.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-X</span>, <span class="option">--exitonfailure</span></kbd></td>
+<code><span class="option">-X</span>, <span class="option">--exitonfailure</span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#stopping-when-first-test-case-fails">Stops test execution</a>
 if any critical test fails.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--exitonerror</span></kbd></td>
+<code><span class="option">--exitonerror</span></kbd></td>
 <td><a class="reference internal" href="#stopping-on-parsing-or-execution-error">Stops test execution</a>
 if any error occurs when parsing test data, importing libraries, and so on.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--skipteardownonexit</span></kbd></td>
+<code><span class="option">--skipteardownonexit</span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#handling-teardowns">Skips teardowns</a> is test execution is prematurely stopped.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--prerunmodifier <var>&lt;name:args&gt;</var></span></kbd></td>
+<code><span class="option">--prerunmodifier <var>&lt;name:args&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Activate <a class="reference internal" href="#programmatic-modification-of-test-data">programmatic modification of test data</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--prerebotmodifier <var>&lt;name:args&gt;</var></span></kbd></td>
+<code><span class="option">--prerebotmodifier <var>&lt;name:args&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Activate <a class="reference internal" href="#programmatic-modification-of-results">programmatic modification of results</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--randomize <var>&lt;all|suites|tests|none&gt;</var></span></kbd></td>
+<code><span class="option">--randomize <var>&lt;all|suites|tests|none&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#randomizing-execution-order">Randomizes</a> test execution order.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--console <var>&lt;verbose|dotted|quiet|none&gt;</var></span></kbd></td>
+<code><span class="option">--console <var>&lt;verbose|dotted|quiet|none&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#console-output-type">Console output type</a>.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--dotted</span></kbd></td>
+<code><span class="option">--dotted</span></kbd></td>
 <td>Shortcut for <code>--console dotted</code>.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--quiet</span></kbd></td>
+<code><span class="option">--quiet</span></kbd></td>
 <td>Shortcut for <code>--console quiet</code>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-W</span>, <span class="option">--consolewidth <var>&lt;width&gt;</var></span></kbd></td>
+<code><span class="option">-W</span>, <span class="option">--consolewidth <var>&lt;width&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#console-width">Sets the width</a> of the console output.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-C</span>, <span class="option">--consolecolors <var>&lt;auto|on|ansi|off&gt;</var></span></kbd></td>
+<code><span class="option">-C</span>, <span class="option">--consolecolors <var>&lt;auto|on|ansi|off&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#console-colors">Specifies are colors</a> used on the console.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-K</span>, <span class="option">--consolemarkers <var>&lt;auto|on|off&gt;</var></span></kbd></td>
+<code><span class="option">-K</span>, <span class="option">--consolemarkers <var>&lt;auto|on|off&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Show <a class="reference internal" href="#console-markers">markers on the console</a> when top level
 keywords in a test case end.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-P</span>, <span class="option">--pythonpath <var>&lt;path&gt;</var></span></kbd></td>
+<code><span class="option">-P</span>, <span class="option">--pythonpath <var>&lt;path&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Additional locations to add to the <a class="reference internal" href="#module-search-path">module search path</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-E</span>, <span class="option">--escape <var>&lt;what:with&gt;</var></span></kbd></td>
+<code><span class="option">-E</span>, <span class="option">--escape <var>&lt;what:with&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#escaping-complicated-characters">Escapes characters</a> that are problematic in the console.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-A</span>, <span class="option">--argumentfile <var>&lt;path&gt;</var></span></kbd></td>
+<code><span class="option">-A</span>, <span class="option">--argumentfile <var>&lt;path&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>A text file to <a class="reference internal" href="#argument-files">read more arguments</a> from.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<code><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
 <td>Prints <a class="reference internal" href="#getting-help-and-version-information">usage instructions</a>.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--version</span></kbd></td>
+<code><span class="option">--version</span></kbd></td>
 <td>Prints the <a class="reference internal" href="#getting-help-and-version-information">version information</a>.</td></tr>
 </tbody>
 </table>
@@ -14882,182 +14886,182 @@ keywords in a test case end.</td></tr>
 </div>
 <div class="section" id="command-line-options-for-post-processing-outputs">
 <h3><a class="toc-backref" href="#id815">6.2.2   Command line options for post-processing outputs</a></h3>
-<blockquote>
-<table class="table table-condensed table-bordered" frame="void" rules="none">
+
+<table class="table table-condensed table-responsive" frame="void" rules="none">
 <colgroup><col class="option">
 <col class="description">
 </col></col></colgroup><tbody valign="top">
 <tr><td class="option-group">
-<kbd><span class="option">-R</span>, <span class="option">--merge</span></kbd></td>
+<code><span class="option">-R</span>, <span class="option">--merge</span></kbd></td>
 <td>Changes result combining behavior to <a class="reference internal" href="#merging-outputs">merging</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-N</span>, <span class="option">--name <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-N</span>, <span class="option">--name <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-the-name">Sets the name</a> of the top level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-D</span>, <span class="option">--doc <var>&lt;document&gt;</var></span></kbd></td>
+<code><span class="option">-D</span>, <span class="option">--doc <var>&lt;document&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-the-documentation">Sets the documentation</a> of the top-level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-M</span>, <span class="option">--metadata <var>&lt;name:value&gt;</var></span></kbd></td>
+<code><span class="option">-M</span>, <span class="option">--metadata <var>&lt;name:value&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-free-metadata">Sets free metadata</a> for the top-level test suite.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-G</span>, <span class="option">--settag <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-G</span>, <span class="option">--settag <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-tags">Sets the tag(s)</a> to all processed test cases.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-t</span>, <span class="option">--test <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-t</span>, <span class="option">--test <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-test-suite-and-test-case-names">Selects the test cases by name</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-s</span>, <span class="option">--suite <var>&lt;name&gt;</var></span></kbd></td>
+<code><span class="option">-s</span>, <span class="option">--suite <var>&lt;name&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-test-suite-and-test-case-names">Selects the test suites</a> by name.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-i</span>, <span class="option">--include <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-i</span>, <span class="option">--include <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-tag-names">Selects the test cases</a> by tag.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-e</span>, <span class="option">--exclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-e</span>, <span class="option">--exclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#by-tag-names">Selects the test cases</a> by tag.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-c</span>, <span class="option">--critical <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-c</span>, <span class="option">--critical <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Tests that have the given tag are <a class="reference internal" href="#setting-criticality">considered critical</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-n</span>, <span class="option">--noncritical <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">-n</span>, <span class="option">--noncritical <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Tests that have the given tag are <a class="reference internal" href="#setting-criticality">not critical</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-d</span>, <span class="option">--outputdir <var>&lt;dir&gt;</var></span></kbd></td>
+<code><span class="option">-d</span>, <span class="option">--outputdir <var>&lt;dir&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Defines where to <a class="reference internal" href="#output-directory">create output files</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-o</span>, <span class="option">--output <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-o</span>, <span class="option">--output <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#output-file">output file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-l</span>, <span class="option">--log <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-l</span>, <span class="option">--log <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#log-file">log file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-r</span>, <span class="option">--report <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-r</span>, <span class="option">--report <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#report-file">report file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-x</span>, <span class="option">--xunit <var>&lt;file&gt;</var></span></kbd></td>
+<code><span class="option">-x</span>, <span class="option">--xunit <var>&lt;file&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the path to the generated <a class="reference internal" href="#xunit-compatible-result-file">xUnit compatible result file</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--xunitskipnoncritical</span></kbd></td>
+<code><span class="option">--xunitskipnoncritical</span></kbd></td>
 </tr>
 <tr><td> </td><td>Mark non-critical tests on <a class="reference internal" href="#xunit-compatible-result-file">xUnit compatible result file</a> as skipped.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-T</span>, <span class="option">--timestampoutputs</span></kbd></td>
+<code><span class="option">-T</span>, <span class="option">--timestampoutputs</span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#timestamping-output-files">Adds a timestamp</a> to all output files.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--splitlog</span></kbd></td>
+<code><span class="option">--splitlog</span></kbd></td>
 <td><a class="reference internal" href="#splitting-logs">Split log file</a> into smaller pieces that open in
 browser transparently.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--logtitle <var>&lt;title&gt;</var></span></kbd></td>
+<code><span class="option">--logtitle <var>&lt;title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-titles">Sets a title</a> for the generated test log.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--reporttitle <var>&lt;title&gt;</var></span></kbd></td>
+<code><span class="option">--reporttitle <var>&lt;title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-titles">Sets a title</a> for the generated test report.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--reportbackground <var>&lt;colors&gt;</var></span></kbd></td>
+<code><span class="option">--reportbackground <var>&lt;colors&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-background-colors">Sets background colors</a> of the generated report.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-L</span>, <span class="option">--loglevel <var>&lt;level&gt;</var></span></kbd></td>
+<code><span class="option">-L</span>, <span class="option">--loglevel <var>&lt;level&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#setting-log-level">Sets the threshold level</a> to select log messages.
 Optionally the default <a class="reference internal" href="#visible-log-level">visible log level</a> can be given
 separated with a colon (:).</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--suitestatlevel <var>&lt;level&gt;</var></span></kbd></td>
+<code><span class="option">--suitestatlevel <var>&lt;level&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Defines how many <a class="reference internal" href="#configuring-displayed-suite-statistics">levels to show</a> in the
 <em>Statistics by Suite</em> table in outputs.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatinclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatinclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#including-and-excluding-tag-statistics">Includes only these tags</a> in the <em>Statistics by Tag</em> table.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatexclude <var>&lt;tag&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatexclude <var>&lt;tag&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#including-and-excluding-tag-statistics">Excludes these tags</a> from the <em>Statistics by Tag</em> table.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatcombine <var>&lt;tags:title&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatcombine <var>&lt;tags:title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Creates <a class="reference internal" href="#generating-combined-tag-statistics">combined statistics based on tags</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagdoc <var>&lt;pattern:doc&gt;</var></span></kbd></td>
+<code><span class="option">--tagdoc <var>&lt;pattern:doc&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Adds <a class="reference internal" href="#adding-documentation-to-tags">documentation to the specified tags</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--tagstatlink <var>&lt;pattern:link:title&gt;</var></span></kbd></td>
+<code><span class="option">--tagstatlink <var>&lt;pattern:link:title&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Adds <a class="reference internal" href="#creating-links-from-tag-names">external links</a> to the <em>Statistics by Tag</em> table.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--removekeywords <var>&lt;all|passed|name:pattern|tag:pattern|for|wuks&gt;</var></span></kbd></td>
+<code><span class="option">--removekeywords <var>&lt;all|passed|name:pattern|tag:pattern|for|wuks&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#removing-and-flattening-keywords">Removes keyword data</a>
 from the generated outputs.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--flattenkeywords <var>&lt;for|foritem|name:pattern|tag:pattern&gt;</var></span></kbd></td>
+<code><span class="option">--flattenkeywords <var>&lt;for|foritem|name:pattern|tag:pattern&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#removing-and-flattening-keywords">Flattens keywords</a>
 in the generated outputs.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--starttime <var>&lt;timestamp&gt;</var></span></kbd></td>
+<code><span class="option">--starttime <var>&lt;timestamp&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the <a class="reference internal" href="#setting-start-and-end-time-of-execution">starting time</a> of test execution when creating
 reports.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--endtime <var>&lt;timestamp&gt;</var></span></kbd></td>
+<code><span class="option">--endtime <var>&lt;timestamp&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Sets the <a class="reference internal" href="#setting-start-and-end-time-of-execution">ending time</a> of test execution when creating reports.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--nostatusrc</span></kbd></td>
+<code><span class="option">--nostatusrc</span></kbd></td>
 <td>Sets the <a class="reference internal" href="#return-codes">return code</a> to zero regardless of failures
 in test cases. Error codes are returned normally.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--processemptysuite</span></kbd></td>
+<code><span class="option">--processemptysuite</span></kbd></td>
 </tr>
 <tr><td> </td><td>Processes output files even if files contain
 <a class="reference internal" href="#when-no-tests-match-selection">empty test suites</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">--prerebotmodifier <var>&lt;name:args&gt;</var></span></kbd></td>
+<code><span class="option">--prerebotmodifier <var>&lt;name:args&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Activate <a class="reference internal" href="#programmatic-modification-of-results">programmatic modification of results</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-C</span>, <span class="option">--consolecolors <var>&lt;auto|on|ansi|off&gt;</var></span></kbd></td>
+<code><span class="option">-C</span>, <span class="option">--consolecolors <var>&lt;auto|on|ansi|off&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#console-colors">Specifies are colors</a> used on the console.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-P</span>, <span class="option">--pythonpath <var>&lt;path&gt;</var></span></kbd></td>
+<code><span class="option">-P</span>, <span class="option">--pythonpath <var>&lt;path&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>Additional locations to add to the <a class="reference internal" href="#module-search-path">module search path</a>.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-E</span>, <span class="option">--escape <var>&lt;what:with&gt;</var></span></kbd></td>
+<code><span class="option">-E</span>, <span class="option">--escape <var>&lt;what:with&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td><a class="reference internal" href="#escaping-complicated-characters">Escapes characters</a> that are problematic in the console.</td></tr>
 <tr><td class="option-group" colspan="2">
-<kbd><span class="option">-A</span>, <span class="option">--argumentfile <var>&lt;path&gt;</var></span></kbd></td>
+<code><span class="option">-A</span>, <span class="option">--argumentfile <var>&lt;path&gt;</var></span></kbd></td>
 </tr>
 <tr><td> </td><td>A text file to <a class="reference internal" href="#argument-files">read more arguments</a> from.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
+<code><span class="option">-h</span>, <span class="option">--help</span></kbd></td>
 <td>Prints <a class="reference internal" href="#getting-help-and-version-information">usage instructions</a>.</td></tr>
 <tr><td class="option-group">
-<kbd><span class="option">--version</span></kbd></td>
+<code><span class="option">--version</span></kbd></td>
 <td>Prints the <a class="reference internal" href="#getting-help-and-version-information">version information</a>.</td></tr>
 </tbody>
 </table>
@@ -15247,7 +15251,7 @@ style is new in Robot Framework 2.8.6.</p>
 do not start formatting, but punctuation characters before or after them
 are allowed. When multiple lines form a <a class="reference internal" href="#paragraphs">paragraph</a>, all inline styles can
 span over multiple lines.</p>
-<table class="table table-condensed table-bordered">
+<table class="table table-condensed table-bordered table-responsive">
 <caption>Inline style examples</caption>
 <tbody><tr>
 <th class="active">Unformatted</th>
@@ -15364,7 +15368,7 @@ Text in header cells is bold and centered. Empty cells are automatically
 added to make rows equally long. For example, the above example would be
 formatted like this in HTML:</p>
 <div class="doc">
-<table class="table table-condensed table-bordered">
+<table class="table table-condensed table-bordered table-responsive">
 <tbody><tr><th class="active">A</th><th class="active">B</th><th class="active">C</th></tr>
 <tr><td><i>1</i></td><td>Hello</td><td>world</td></tr>
 <tr><td><i>2</i></td><td>Hi</td><td></td></tr>
@@ -15497,7 +15501,7 @@ format <code>hh:mm:ss.mil</code>. In this format  both hour and millisecond part
 are optional, leading and trailing zeros can be left out when they are not
 meaningful, and negative times can be represented by adding the <code>-</code>
 prefix. For example, following timer and time string values are identical:</p>
-<table border="1" class="table table-condensed table-bordered">
+<table border="1" class="table table-condensed table-bordered table-responsive">
 <caption>Timer and time string examples</caption>
 <colgroup>
 <col width="24%">
